@@ -1,0 +1,4 @@
+runtime: php81
+service: laravel-app
+env_variables:
+  APP_KEY: base64:seuAppKeyGerado

@@ -1,0 +1,9 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [ 'build', '-t', 'africa-south1-docker.pkg.dev/redeteste-455308/cloud-run-source-deploy/laravel-app', '.' ]
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [ 'push', 'africa-south1-docker.pkg.dev/redeteste-455308/cloud-run-source-deploy/laravel-app' ]
+
+images:
+  - 'africa-south1-docker.pkg.dev/redeteste-455308/cloud-run-source-deploy/laravel-app'
